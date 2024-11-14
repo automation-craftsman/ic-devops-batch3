@@ -182,6 +182,7 @@
       ```bash
       git clean -f
       ```
+        ![Screenshot - git clean](screenshots/git-clean.png)
 
 24. **`git blame <file>`**
     - **Description**: Shows who last modified each line in a file.
@@ -189,6 +190,7 @@
       ```bash
       git blame main.py
       ```
+        ![Screenshot - git blame](screenshots/git-blame.png)
 
 25. **`git show <commit-hash>`**
     - **Description**: Displays information and changes for a specific commit.
@@ -211,6 +213,7 @@
       ```bash
       git archive main --output=source.zip
       ```
+        ![Screenshot - git archive](screenshots/git-archive.png)
 
 28. **`git config --list`**
     - **Description**: Lists all Git configuration settings.
