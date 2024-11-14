@@ -196,8 +196,9 @@
     - **Description**: Displays information and changes for a specific commit.
     - **Example**: 
       ```bash
-      git show a1b2c3d4
+      git show ff3e888
       ```
+        ![Screenshot - git show](screenshots/git-show.png)
 
 26. **`git shortlog`**
     - **Description**: Summarizes commit history by author.
