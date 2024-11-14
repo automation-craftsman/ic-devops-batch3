@@ -21,17 +21,18 @@
    - **Description**: Stages changes to specified files or directories. Staging allows you to select what to include in your next commit.
    - **Example**: 
      ```bash
-     git add index.html
+     git add icdb3.txt
      git add .
      ```
+        ![Screenshot - git add](screenshots/git-add.png)
 
 4. **`git commit -m "message"`**
    - **Description**: Commits staged changes to the repository with a descriptive message, making a snapshot of your project at that point.
    - **Example**: 
      ```bash
-     git commit -m "Add navbar to homepage"
+     git commit -m "Add batch-03 students names in the icdb3.txt file."
      ```
-
+        ![Screenshot - git commit](screenshots/git-commit.png)
 5. **`git status`**
    - **Description**: Shows the current status of the working directory, including staged, unstaged, and untracked files.
    - **Example**: 
@@ -49,13 +50,17 @@
      git log --all --graph
      git log --all --abbrev-commit --graph
      ```
-
+        ![Screenshot - git full log](screenshots/git-log.png)
+        ![Screenshot - git oneliner log](screenshots/git-log-oneline.png)
+        ![Screenshot - git log graph](screenshots/git-log-graph.png)
+        ![Screenshot - git log graph with short commit hash](screenshots/git-log-commit.png)
 7. **`git branch`**
    - **Description**: Lists, creates, renames, or deletes branches in your repository. Branches are separate workspaces for different features or versions of the project.
    - **Example**: 
      ```bash
      git branch
      ```
+        ![Screenshot - git branch](screenshots/git-branch.png)
 
 8. **`git checkout <branch-name>`**
    - **Description**: Switches to the specified branch, updating the working directory to match. Allows you to work on different branches without merging.
@@ -63,6 +68,7 @@
      ```bash
      git checkout main
      ```
+        ![Screenshot - git checkout](screenshots/git-checkout.png)
 
 9. **`git merge <branch-name>`**
    - **Description**: Combines changes from the specified branch into the current branch, integrating updates or features.
@@ -105,151 +111,136 @@
       ```bash
       git remote -v
       ```
+        ![Screenshot - git remote](screenshots/git-remote-v.png)
 
 15. **`git diff`**
     - **Description**: Shows line-by-line differences between files in the working directory and the last commit.
     - **Example**: 
       ```bash
       git diff
+      git diff icdb3.txt
       ```
+        ![Screenshot - git diff](screenshots/git-diff.png)
 
 16. **`git reset <file>`**
     - **Description**: Unstages the specified file, removing it from the staging area without deleting changes.
     - **Example**: 
       ```bash
-      git reset index.html
+      git reset icdb3.txt
       ```
+        ![Screenshot - git reset](screenshots/git-reset.png)
 
 17. **`git rm <file>`**
     - **Description**: Deletes a file from the working directory and stages the deletion.
     - **Example**: 
       ```bash
-      git rm old-file.txt
+      git rm icdb3.txt
       ```
+        ![Screenshot - git rm](screenshots/git-rm.png)
 
-18. **`git fetch`**
+18. **`git fetch <remote-name>`**
     - **Description**: Downloads changes from the remote repository without merging them.
     - **Example**: 
       ```bash
       git fetch origin
       ```
 
-19. **`git tag <tag-name>`**
-    - **Description**: Adds a label to a specific commit, useful for marking releases.
-    - **Example**: 
-      ```bash
-      git tag v1.0
-      ```
-
-20. **`git mv <old-filename> <new-filename>`**
+19. **`git mv <old-filename> <new-filename>`**
     - **Description**: Renames or moves a file and stages the change.
     - **Example**: 
       ```bash
-      git mv oldname.txt newname.txt
+      git mv old_name.txt new_name.txt
       ```
+        ![Screenshot - git mv](screenshots/git-mv.png)
 
-21. **`git rebase <branch-name>`**
+20. **`git rebase <branch-name>`**
     - **Description**: Moves or integrates commits from one branch onto another, making a cleaner, linear history.
     - **Example**: 
       ```bash
       git rebase main
       ```
 
-22. **`git cherry-pick <commit-hash>`**
+21. **`git cherry-pick <commit-hash>`**
     - **Description**: Applies a specific commit from one branch to the current branch.
     - **Example**: 
       ```bash
       git cherry-pick a1b2c3d4
       ```
 
-23. **`git revert <commit-hash>`**
-    - **Description**: Creates a new commit that undoes the specified commit’s changes.
-    - **Example**: 
-      ```bash
-      git revert a1b2c3d4
-      ```
-
-24. **`git bisect`**
-    - **Description**: Helps locate a bug by using binary search across commits.
-    - **Example**: 
-      ```bash
-      git bisect start
-      ```
-
-25. **`git reflog`**
+22. **`git reflog`**
     - **Description**: Shows a log of reference updates, useful for recovering lost commits.
     - **Example**: 
       ```bash
       git reflog
       ```
+        ![Screenshot - git reflog](screenshots/git-reflog.png)
 
-26. **`git clean -f`**
+23. **`git clean -f`**
     - **Description**: Removes untracked files from the working directory.
     - **Example**: 
       ```bash
       git clean -f
       ```
 
-27. **`git blame <file>`**
+24. **`git blame <file>`**
     - **Description**: Shows who last modified each line in a file.
     - **Example**: 
       ```bash
       git blame main.py
       ```
 
-28. **`git show <commit-hash>`**
+25. **`git show <commit-hash>`**
     - **Description**: Displays information and changes for a specific commit.
     - **Example**: 
       ```bash
       git show a1b2c3d4
       ```
 
-29. **`git shortlog`**
+26. **`git shortlog`**
     - **Description**: Summarizes commit history by author.
     - **Example**: 
       ```bash
       git shortlog
       ```
+        ![Screenshot - git shortlog](screenshots/git-shortlog.png)
 
-30. **`git archive <branch> --output=<file.zip>`**
+27. **`git archive <branch> --output=<file.zip>`**
     - **Description**: Creates a zip or tar archive of the project at a specific commit or branch.
     - **Example**: 
       ```bash
       git archive main --output=source.zip
       ```
 
-31. **`git describe`**
-    - **Description**: Provides a readable name for the last commit, often for tagging purposes.
-    - **Example**: 
-      ```bash
-      git describe
-      ```
-
-32. **`git config --list`**
+28. **`git config --list`**
     - **Description**: Lists all Git configuration settings.
     - **Example**: 
       ```bash
       git config --list
+      git config --global --list
+      git config --local --list
       ```
+        ![Screenshot - git config](screenshots/git-config.png)
+        ![Screenshot - git global config](screenshots/git-config-global.png)
+        ![Screenshot - git local config](screenshots/git-config-local.png)
 
-33. **`git grep <pattern>`**
+29. **`git grep <pattern>`**
     - **Description**: Searches for a pattern in tracked files.
     - **Example**: 
       ```bash
       git grep "function"
       ```
 
-34. **`git reset --hard <commit-hash>`**
+30. **`git reset --hard <commit-hash>`**
     - **Description**: Resets the repository to a specific commit, discarding all changes afterward.
     - **Example**: 
       ```bash
       git reset --hard a1b2c3d4
       ```
 
-35. **`git config --global user.name "Your Name"` and `git config --global user.email "you@example.com"`**
+31. **`git config --global user.name "Your Name"` and `git config --global user.email "you@example.com"`**
     - **Description**: Sets global user name and email for commits.
     - **Example**: 
       ```bash
-      git config --global user.name "John Doe"
-      git config --global user.email "john@example.com"
+      git config --global user.name "automation-craftsman"
+      git config --global user.email "example@gmail.com.com"
       ```
