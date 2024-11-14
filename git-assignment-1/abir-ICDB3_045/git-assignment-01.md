@@ -159,6 +159,7 @@
       ```bash
       git rebase main
       ```
+        ![Screenshot - git rebase](screenshots/git-rebase.png)
 
 21. **`git cherry-pick <commit-hash>`**
     - **Description**: Applies a specific commit from one branch to the current branch.
