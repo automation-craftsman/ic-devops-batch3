@@ -230,13 +230,15 @@
       ```bash
       git grep "function"
       ```
+        ![Screenshot - git grep](screenshots/git-grep.png)
 
 30. **`git reset --hard <commit-hash>`**
     - **Description**: Resets the repository to a specific commit, discarding all changes afterward.
     - **Example**: 
       ```bash
-      git reset --hard a1b2c3d4
+      git reset --hard b871aa2
       ```
+        ![Screenshot - git hard reset](screenshots/git-reset-hard.png)
 
 31. **`git config --global user.name "Your Name"` and `git config --global user.email "you@example.com"`**
     - **Description**: Sets global user name and email for commits.
